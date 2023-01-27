@@ -2,8 +2,6 @@
 {
     internal class Program : Tools
     {
-        
-
         public static User Registration(List<User> users)
         {
             Console.WriteLine("REGISTER");

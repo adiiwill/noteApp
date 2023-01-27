@@ -78,8 +78,6 @@ namespace noteApp
 
                 notes.RemoveAt(ch - 1);
                 Announcement($"Note #{ch} was removed!");
-
-
             }
             else
             {

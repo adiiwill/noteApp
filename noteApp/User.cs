@@ -37,13 +37,13 @@ namespace noteApp
 
         public void ListNotes()
         {
-            if (this.Notes.Count == 0)
+            if (notes.Count == 0)
             {
                 Console.WriteLine("No notes yet...");
                 return;
             }
 
-            foreach (var n in this.Notes)
+            foreach (var n in notes)
             {
                 Console.WriteLine($"- {n}");
             }
@@ -51,7 +51,7 @@ namespace noteApp
 
         public void removeNote()
         {
-            if (this.notes.Count == 0)
+            if (notes.Count == 0)
             {
                 Console.WriteLine("No notes...");
                 Console.WriteLine("\nPress [ENTER] to return.");
@@ -60,23 +60,26 @@ namespace noteApp
                 return;
             }
 
-            for (int i = 0; i < this.notes.Count; i++)
+            for (int i = 0; i < notes.Count; i++)
             {
                 Console.WriteLine($"{i + 1} - {notes[i]}");
             }
 
-            Console.Write("Enter the note's number to delete: ");
+            Console.Write("\nEnter the note's number to delete: ");
             string choice = Console.ReadLine();
 
             if (int.TryParse(choice, out int ch))
             {
-                if (ch == 0 || ch > notes.Count + 1)
+                if (ch == 0 || ch > notes.Count)
                 {
                     Error("Invalid selection! Nothing was removed.");
+                    return;
                 }
 
                 notes.RemoveAt(ch - 1);
                 Announcement($"Note #{ch} was removed!");
+
+
             }
             else
             {

@@ -14,7 +14,7 @@ namespace noteApp
             Console.Write("Username: ");
             string rUsername = Console.ReadLine();
 
-            Console.Write("\nPassword: ");
+            Console.Write("Password: ");
             string rPassword = Console.ReadLine();
 
             if (isUserExist(rUsername, users))
@@ -98,7 +98,7 @@ namespace noteApp
                             Console.Write("Username: ");
                             string lUsername = Console.ReadLine();
 
-                            Console.Write("\nPassword: ");
+                            Console.Write("Password: ");
                             string lPassword = Console.ReadLine();
 
                             User lUser = GetUser(lUsername, users);
@@ -147,8 +147,6 @@ namespace noteApp
                             Console.Clear();
                             continue;
                     }
-
-                    
                 }
 
                 Console.WriteLine("MENU");

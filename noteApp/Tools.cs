@@ -15,21 +15,21 @@ namespace noteApp
         public static void Error(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
+            Console.WriteLine($"\n{message}");
             Console.ForegroundColor = ConsoleColor.Gray;
             Wait(2000);
         }
         public static void Announcement(string message)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine(message);
+            Console.WriteLine($"\n{message}");
             Console.ForegroundColor = ConsoleColor.Gray;
             Wait(2000);
         }
         public static void Success(string message)
         {
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(message);
+            Console.WriteLine($"\n{message}");
             Console.ForegroundColor = ConsoleColor.Gray;
             Wait(2000);
         }

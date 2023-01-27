@@ -1,6 +1,4 @@
-﻿using System.Text.RegularExpressions;
-
-namespace noteApp
+﻿namespace noteApp
 {
     internal class Program : Tools
     {
